@@ -124,7 +124,7 @@ scene.setBackgroundImage(img`
 // Created on: 2022/09/30
 // 
 // Asks for the diameter as a pizza in inches and uses it as a variable.
-let diameter_inch_of_pizza = game.askForNumber("What is the diameter of your pizza?")
+let diameter_inch_of_pizza = game.askForNumber("What is the diameter of your pizza in inches?")
 // Created by: Owen Whalley
 // Created on: 2022/09/30
 // 
