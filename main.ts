@@ -120,10 +120,26 @@ scene.setBackgroundImage(img`
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
     `)
+// Created by: Owen Whalley
+// Created on: 2022/09/30
+// 
+// Asks for the diameter as a pizza in inches and uses it as a variable.
 let diameter_inch_of_pizza = game.askForNumber("What is the diameter of your pizza?")
+// Created by: Owen Whalley
+// Created on: 2022/09/30
+// 
+// This block and the one following calculates the subtotal of the pizza. (0.5 x diameter) + 1.75.
 let Pizza_Cost = 0.5 * diameter_inch_of_pizza
 let Pizza_Cost__additional = Pizza_Cost + 1.75
+// Created by: Owen Whalley
+// Created on: 2022/09/30
+// 
+// The calculates the final price by multiplying the subtotal by 1.13, being the tax.
 let Subtotal = Pizza_Cost__additional * 1.13
+// Created by: Owen Whalley
+// Created on: 2022/09/30
+// 
+// These two blocks round the price to the second decimal place.
 let Rounded = Math.round(Subtotal * 100)
 let Final_Cost = Rounded / 100
 game.splash("Your final price is $" + Final_Cost)
